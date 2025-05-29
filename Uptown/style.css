@@ -1,0 +1,63 @@
+#hero{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./images/main.img);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   clip-path: polygon(0 0, 100% 0, 100% 76%, 50% 100%, 0 78%, 0% 50%);
+    }
+.colorpink{
+    color: palevioletred;
+}
+.bgpink{
+  background-color: palevioletred;
+}
+.line-paragraph{
+    position: relative; 
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+}
+.line-paragraph::before,.line-paragraph::after{
+    content: '';
+    position:absolute; 
+    top:50%;
+    width:30px;
+    height:1px;
+    background-color: palevioletred;
+}
+.line-paragraph::before{
+    left:0;
+    transform: translateY(-50%);
+}
+.line-paragraph::after{
+    right: 0;
+    transform: translateY(-50%);
+}
+.bgcolor{
+  background-color: aliceblue;
+}
+.circle{
+  height: 50px;
+  width: 50px;
+  background-color: palevioletred;
+  clip-path: circle(50%);
+}
+ .client{
+  height:10vh;
+  width: 9vw;
+ clip-path: circle(30%);
+ }
+ .livearea:hover{
+  transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+  transform:scale(1.09);
+ }
+ .blog:hover{
+   transform: scale(1,1.1);
+ }
+ .Happy:hover{
+  background-color: gray;
+  color:white;
+ }
+ .card:hover{
+  background-color:rgb(249, 183, 205);
+ }
